@@ -21,7 +21,8 @@ O Scrpit Linux foi testado em :
 Em Windows :
     Windows 10
     Shell: Power Shell
-
+Para rodar o script use no Shell ou Powershell:
+python3 script.py
 
 
 
