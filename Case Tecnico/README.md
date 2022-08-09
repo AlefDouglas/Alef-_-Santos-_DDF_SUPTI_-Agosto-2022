@@ -4,4 +4,4 @@ Teste Técnico - Dadosfera
 As atividades foram separadas em diretorios distintos
 o Script do /Case2 está dividido em duas partes
 
- Se tiverem interesse o Case 2 poderá ser atualizado em breve para  versão com suporta a manipulação de usuarios direto pelo Google Workspace
+ Se tiverem interesse o Case 2 poderá ser atualizado em breve para  versão com suporte a manipulação de usuarios direto pelo Google Workspace
