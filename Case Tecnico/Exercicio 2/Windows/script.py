@@ -1,4 +1,4 @@
-#pip3 install pandas
+#python3 -m pip3 install pandas
 #importação das dependencias
 
 import re

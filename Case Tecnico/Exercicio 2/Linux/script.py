@@ -1,5 +1,7 @@
-#pip3 install pandas
-#importação das dependencias
+#Necessario o uso do modulo "pandas"!
+#python3 pip3 install pandas
+
+#importação das dependencias.
 
 import re
 import pandas as pd
@@ -20,8 +22,10 @@ import subprocess
 import pwd
 
 #definindo função de criação de usuario!
+#aqui eu uso comandos do proprio shell do linux puxando as informações do CSV
+
 def add_user(name, password, email):    
-    subprocess.run(['sudo', 'useradd', '-u', uiid, '-p', password, name, '-c', email, ])  
+    subprocess.run(['sudo', 'useradd', '-u', uiid, '-p', password,  '-c', name, email, ])  
     print("User: "), print(name)
     print("Password: "), print(password)
     print("USUARIO CRIADO COM SUCESSO!!! ")  
@@ -36,7 +40,7 @@ value = string.ascii_lowercase + string.ascii_uppercase + string.ascii_letters +
 value2 = string.digits
 
 #definindo strings para a leitura e manipulação do CSV.
- 
+
 table = pd.read_csv("UsersGoogleWorkSpace.csv")
 tabble_df = pd.DataFrame(table)
 
@@ -54,9 +58,10 @@ for index, row in tabble_df.iterrows():
         uiid  += choice(value2)
         
         # Acrescentei posteriormente uma função
-        # para realizar a checagem de Users duplicados
-        # por tanto mesmo a tabela sendo atualizada o scrpit
-        # continua funcional
+        # para realizar a checagem de Users duplicados;
+        # Por tanto mesmo a tabela sendo atualizada o scrpit
+        # continua funcional poddendo adicionar novos usuarios
+        # que forem acrescentados no WorkSpace.
         
     username = name
     usernames = [x[0] for x in pwd.getpwall()]
