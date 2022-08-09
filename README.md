@@ -2,7 +2,7 @@
 Teste Técnico - Dadosfera
 
 As atividades foram separadas em diretorios distintos
-o Script do /Exercicio2 está dividido em duas partes
+o Script do /Case/\2 está dividido em duas partes
 
 
 
