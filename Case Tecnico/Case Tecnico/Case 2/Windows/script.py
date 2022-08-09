@@ -8,7 +8,6 @@ import sys
 import getpass 
 import string
 import re
-import pwd 
 string.ascii_lowercase 
 string.ascii_uppercase 
 string.ascii_letters 
@@ -17,11 +16,11 @@ string.punctuation
 from random import choice
 import string
 import subprocess
-import pwd
+
 
 #definindo função de criação de usuario!
 def add_user(name, password, email):    
-    os.system('net', name, password, '/add')  
+    os.system(f'net user {name} {password} /add')  
     print("User: "), print(name)
     print("Password: "), print(password)
     print("USUARIO CRIADO COM SUCESSO!!! ")  
@@ -58,11 +57,11 @@ for index, row in tabble_df.iterrows():
         # por tanto mesmo a tabela sendo atualizada o scrpit
         # continua funcional
         
-    username = name
-    usernames = [x[0] for x in pwd.getpwall()]
-    if username in usernames:
-        print("Usuario "), print(name), print("Já Existe!!!")
-    else:
+    #username = name
+   # usernames = [x[0] for x in pwd.getpwall()]
+    #if username in usernames:
+     #   print("Usuario "), print(name), print("Já Existe!!!")
+    #else:
         add_user(name, password, email,)
 
 
